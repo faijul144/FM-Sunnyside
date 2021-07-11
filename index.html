@@ -1,68 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/style/style.css">
+
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
+
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <header desktop-bg="./assets/images/desktop/image-header.jpg" mobile-bg="./assets/images/mobile/image-header.jpg">
+    <!-- Main Navigation Start -->
+    <nav>
+      <a href="./index.html" class="site-name">sunnyside</a>
+      <a href="javascript:void(0)" class="mobile-toggle">
+        <img src="./assets/images/icon-hamburger.svg" alt="Hamburger">
+      </a>
+      <ul class="main-menu">
+        <li><a href="javascript:void(0)" class="nav-link">About</a></li>
+        <li><a href="javascript:void(0)" class="nav-link">Services</a></li>
+        <li><a href="javascript:void(0)" class="nav-link">Projects</a></li>
+        <li><a href="javascript:void(0)" class="nav-link btn btn__nav">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Main Navigation End -->
+    <!-- Hero Start -->
+    <div class="hero-section">
+      <h1 class="hero-section__title">We are creatives</h1>
+      <img src="./assets/images/icon-arrow-down.svg" alt="Arrow" class="hero-section__icon">
+    </div>
+    <!-- Hero End -->
+  </header>
 
-  We are creatives
+  <main>
 
-  Transform your brand
-
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
-
-  Learn more
-
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
-
+    <!-- Grid Start -->
+    <section class="grid-section">
+      <div class="container">
+        <div class="row">
+          <div class="grid-section__item order-2">
+            <h3 class="title-text">
+              Transform your brand
+            </h3>
+            <p class="body-text">
+              We are a full-service creative agency specializing in helping brands grow fast.
+              Engage your clients through compelling visuals that do most of the marketing for you.
+            </p>
+            <a href="javascript:void(0)" class="btn btn__red">Learn more</a>
+          </div>
+          <div class="grid-section__item order-1" desktop-bg="./assets/images/desktop/image-transform.jpg"
+            mobile-bg="./assets/images/mobile/image-transform.jpg"></div>
+          <div class="grid-section__item" desktop-bg="./assets/images/desktop/image-stand-out.jpg"
+            mobile-bg="./assets/images/mobile/image-stand-out.jpg"></div>
+          <div class="grid-section__item">
+            <h3 class="title-text">
+              Stand out to the right audience
+            </h3>
+            <p class="body-text">
+              Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
+              we’ll build
+              and extend your brand in digital places.
+            </p>
+            <a href="javascript:void(0)" class="btn btn__red">Learn more</a>
+          </div>
+          <div class="grid-section__item" desktop-bg="./assets/images/desktop/image-graphic-design.jpg"
+            mobile-bg="./assets/images/mobile/image-graphic-design.jpg">
+            <h3 class="title-text">
+              Graphic design
+            </h3>
+            <p class="body-text">
+              Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+              potential clients’ attention.
+            </p>
+          </div>
+          <div class="grid-section__item" desktop-bg="./assets/images/desktop/image-photography.jpg"
+            mobile-bg="./assets/images/mobile/image-photography.jpg">
+            <h3 class="title-text">
+              Photography
+            </h3>
+            <p class="body-text">
+              Increase your credibility by getting the most stunning, high-quality photos that improve your business
+              image.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Grid End -->
+    <!-- Testimonial Start -->
+    <section class="testimonial-section">
+      <div class="container">
+        <h2 class="section-title">Client testimonials</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="testimonial-section__card">
+              <div class="testimonial-section__head">
+                <img src="./assets/images/image-emily.jpg" alt="emily" />
+              </div>
+              <p class="testimonial-section__text">
+                We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were
+                always hit.
+              </p>
+              <div class="testimonial-section__meta">
+                <div class="testimonial-section__meta--name">
+                  Emily R.
+                </div>
+                <div class="testimonial-section__meta--position">
+                  Marketing Director
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-section__card">
+              <div class="testimonial-section__head">
+                <img src="./assets/images/image-thomas.jpg" alt="emily" />
+              </div>
+              <p class="testimonial-section__text">
+                Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+                enjoyable experience.
+              </p>
+              <div class="testimonial-section__meta">
+                <div class="testimonial-section__meta--name">
+                  Thomas S.
+                </div>
+                <div class="testimonial-section__meta--position">
+                  Chief Operating Officer
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-section__card">
+              <div class="testimonial-section__head">
+                <img src="./assets/images/image-jennie.jpg" alt="emily" />
+              </div>
+              <p class="testimonial-section__text">
+                Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+              </p>
+              <div class="testimonial-section__meta">
+                <div class="testimonial-section__meta--name">Jennie F.</div>
+                <div class="testimonial-section__meta--position">Business Owner</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial End -->
+    <!-- Footer Images Start -->
+    <section class="footer-image-section">
+      <div class="footer-image-section__item"></div>
+      <div class="footer-image-section__item"></div>
+      <div class="footer-image-section__item"></div>
+      <div class="footer-image-section__item"></div>
+    </section>
+    <!-- Footer Images End -->
+  </main>
+  <!-- Footer Start -->
+  <footer class="footer">
+    <div class="footer__site-name">sunnyside</div>
+    <ul class="footer__menu">
+      <li><a href="javascript:void(0)" class="footer__menu--link">About</a></li>
+      <li><a href="javascript:void(0)" class="footer__menu--link">Services</a></li>
+      <li><a href="javascript:void(0)" class="footer__menu--link">Projects</a></li>
+    </ul>
+    <ul class="footer__social">
+      <li>
+        <a href="javascript:void(0)" class="footer__social--link">
+          <img src="./assets/images/icon-facebook.svg" alt="social-icon">
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="footer__social--link">
+          <img src="./assets/images/icon-instagram.svg" alt="social-icon">
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="footer__social--link">
+          <img src="./assets/images/icon-twitter.svg" alt="social-icon">
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="footer__social--link">
+          <img src="./assets/images/icon-pinterest.svg" alt="social-icon">
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <!-- Footer Start -->
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Md. Faijul Islam</a>.
   </div>
+  <script src="./assets/script/main.js"></script>
 </body>
+
 </html>
