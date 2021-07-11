@@ -43,15 +43,48 @@
 /* Button */
 .btn {
   text-transform: uppercase;
+  color: $dark-high-des-blue;
+  font-family: $header-font;
+  font-weight: 700;
+
   &__nav {
     display: inline-block;
     padding: 1rem 1.5rem;
     background: $primary-yellow;
-    color: $dark-high-des-blue;
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
+  }
+  &__yellow,
+  &__red {
+    font-weight: 900;
+    position: relative;
+    z-index: 0;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0.4rem;
+      left: 0;
+      bottom: 0.01rem;
+      z-index: -1;
+      border-radius: 100px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+      -o-border-radius: 100px;
+    }
+  }
+  &__yellow {
+    &::after {
+      background-color: lighten($primary-yellow, 30%);
+    }
+  }
+  &__red {
+    &::after {
+      background-color: lighten($primary-red, 15%);
+    }
   }
 }

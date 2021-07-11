@@ -26,8 +26,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.btn {
+h6 {
   font-family: $header-font;
   font-weight: 700;
 }
@@ -41,6 +40,7 @@ h6,
 [mobile-bg] {
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Navigation Start */
@@ -123,5 +123,47 @@ header {
   }
 }
 /* Navigation End */
+
+/* Grid Section Start */
+.grid-section {
+  &__item {
+    min-height: 20rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem 1.5rem;
+    text-align: center;
+    .title-text {
+      font-size: 2.5rem;
+      color: $dark-high-des-blue;
+      margin-bottom: 1rem;
+    }
+    .body-text {
+      color: $grey-blue;
+      font-size: 1.15rem;
+      line-height: 2rem;
+      margin-bottom: 2rem;
+    }
+    &--has-text {
+      min-height: 37.49rem;
+      justify-content: flex-end;
+      background-size: contain;
+      background-position-y: top;
+      .title-text {
+        margin-top: 1rem;
+        font-size: 2rem;
+      }
+      .body-text {
+        color: $dark-high-des-blue;
+        margin: 0;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+/* Grid Section End */
 
 @import "mentorfooter";

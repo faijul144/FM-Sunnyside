@@ -51,18 +51,49 @@
 /* Button */
 .btn {
   text-transform: uppercase;
+  color: #23303e;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
 }
 
 .btn__nav {
   display: inline-block;
   padding: 1rem 1.5rem;
   background: #fad400;
-  color: #23303e;
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
+}
+
+.btn__yellow, .btn__red {
+  font-weight: 900;
+  position: relative;
+  z-index: 0;
+}
+
+.btn__yellow::after, .btn__red::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.4rem;
+  left: 0;
+  bottom: 0.01rem;
+  z-index: -1;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.btn__yellow::after {
+  background-color: #ffef94;
+}
+
+.btn__red::after {
+  background-color: #ffbcb3;
 }
 
 * {
@@ -89,8 +120,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.btn {
+h6 {
   font-family: "Fraunces", serif;
   font-weight: 700;
 }
@@ -104,6 +134,7 @@ h6,
 [mobile-bg] {
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Navigation Start */
@@ -195,6 +226,51 @@ header .hero-section__icon {
 }
 
 /* Navigation End */
+/* Grid Section Start */
+.grid-section__item {
+  min-height: 20rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.grid-section__item .title-text {
+  font-size: 2.5rem;
+  color: #23303e;
+  margin-bottom: 1rem;
+}
+
+.grid-section__item .body-text {
+  color: #a7abae;
+  font-size: 1.15rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid-section__item--has-text {
+  min-height: 37.49rem;
+  justify-content: flex-end;
+  background-size: contain;
+  background-position-y: top;
+}
+
+.grid-section__item--has-text .title-text {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.grid-section__item--has-text .body-text {
+  color: #23303e;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+/* Grid Section End */
 /*Mentor Colors*/
 .attribution {
   font-size: 11px;
