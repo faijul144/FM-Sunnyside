@@ -13,7 +13,7 @@ allBGDiv.forEach((item) => {
   item.style.backgroundImage = "url(" + item.getAttribute("data-bg") + ")";
 });
 
-if (winWidth >= 768) {
+if (winWidth >= 500) {
   desktopBGDiv.forEach((item) => {
     item.style.backgroundImage = "url(" + item.getAttribute("desktop-bg") + ")";
   });
